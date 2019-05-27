@@ -1,0 +1,178 @@
+/*
+body
+백그라운드 색상 변경
+*/
+body
+{
+    background-color: #5383E8;
+}
+/*
+header
+위에서 0픽셀부터 시작
+너비 100퍼센트
+*/
+.header
+{
+    top:0px;
+    width: 100%;
+}
+/*
+menu_slide
+높이는 꽉채워서 100%
+초기 너비는 0
+화면 왼쪽에 고정
+앞쪽에 배치
+위에 0
+옆에 0
+배경 색상
+
+*/
+#menu_slide
+{
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color:white;
+    overflow-x: hidden;
+    transition: 1s;
+    padding-top: 60px;
+}
+/*----------------------------------------------*/
+.menu_list ul
+{
+    list-style-type: none;
+    padding:0;
+}
+.menu_list ul li a
+{
+    font-weight: bold;
+    padding: 8px 8px 8px 22px;
+    text-decoration: none;
+    font-size: 25px;
+    color:#5383E8;
+    display: block;
+    transition: 0.5s;
+    padding-left:50px;
+}
+.menu_list ul li a:hover
+{
+    font-size: 30px;
+    color:#C6C6C6;
+    border-bottom: 4px solid #C6C6C6
+}
+/*-----------------------------------------------*/
+.menu_close
+{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    font-size: 50px;
+    margin-left: 15px;
+    transition: 0.5s;
+    color: #5383E8;
+}
+.menu_close:hover
+{
+    font-size: 55px;
+    color:#C6C6C6;
+}
+/*-----------------------------------------------*/
+.menu_opener span{
+   font-size:30px;
+   transition: 0.5s;
+   color: white;
+}
+.menu_opener span:hover
+{
+    font-size: 35px;
+    color:#C6C6C6;
+}
+/*-----------------------------------------------*/
+.logo_size
+{
+    font-size: 100px;
+}
+.logo
+{
+    text-align: center;
+    color: white;
+
+    width: 100%;
+    
+    font-family: "Bauhaus 93";
+}
+/*-----------------------------------------------*/
+.main_button
+{
+    max-width: 200px;
+    margin:auto;
+    padding-bottom: 50px;
+}
+.main_button_po
+{
+    display: inline-block;
+}
+
+.main_button_po *
+{
+    background-color: white;
+    border-radius: 20px;
+    color:#5383E8;
+    padding: 7px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 13   px;
+    box-shadow: 2px 2px 10px -5px black;
+    margin:10px;
+    outline: none;
+    cursor: pointer;
+    display: inline-block;
+    font-family: "배달의민족 도현";
+}
+.main_button_po *:hover
+{
+    background-color: #C6C6C6;
+    color:white;
+}
+.section
+{
+    margin:auto;
+    max-width: 900px;
+    overflow: hidden;
+    
+    border-radius: 30px;
+    box-shadow: 2px 2px 10px -5px black;
+    padding: 5%;
+}
+.category
+{
+    margin:auto;
+    max-width: 900px;
+    overflow: hidden;
+    padding-bottom: 40px;
+}
+.category_title
+{
+    font-family: "배달의민족 도현";
+    font-size: 30px;
+    color:white;
+}
+.category hr
+{
+    border: 3px solid white;
+}
+.category_main
+{
+    margin: 30px;   
+    margin:auto;
+    max-width: 840px;
+}
+.category_main .image
+{
+    width: 100%;
+    box-shadow: 2px 2px 10px -5px black;
+    border-radius: 30px;
+}

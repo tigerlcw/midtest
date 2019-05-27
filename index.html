@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="css/left_menu_style.css">
+    <link rel="stylesheet" href="css/category_banner.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8">
+    <script type="text/javascript" src="javascript/left_menu_style.js"></script>
+    <script type="text/javascript" src="javascript/category_banner_slide_1.js"></script>
+    <script type="text/javascript" src="javascript/category_banner_slide_2.js"></script>
+    <script type="text/javascript" src="javascript/category_banner_slide_3.js"></script>
+</head>
+
+<body>
+    <div class="header">
+        <div id="menu_slide">
+            <div class="menu_list">
+                <span class="menu_close" style="cursor: pointer" onclick="close_menu()">&times;</span>
+                <ul>
+                    <li><a href="#">Clothes</a></li>
+                    <li><a href="#">Culture</a></li>
+                    <li><a href="#">Sports</a></li>
+                    <li><a href="#">Electronics</a></li>
+                    <li><a href="#">Car</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="menu_opener">
+            <span style="cursor:pointer" onclick="open_menu()">&#9776;</span>
+        </div>
+        <div class="logo">
+            <div class="logo_size">ING</div>
+        </div>
+    </div>
+    <div class="main_button">
+        <dlv class="main_button_po">
+            <a href="#">회원가입</a>
+            <a href="#">로그인</a>
+        </dlv>
+    </div>
+    <div class="section">
+        <div class="category">
+            <a class="category_title">Shoes</a>
+            <hr><br>
+            <div class="category_main">
+                <img class="image" src="image/img1.png">
+            </div>
+            <div class="category_banner">
+                <div class="image_banner">
+                    <img id="banner_image1_1" src="image/img1.png" style="width: 100%">
+                    <img id="banner_image2_1" src="image/img2.png" style="width: 0%">
+                    <img id="banner_image3_1" src="image/img3.png" style="width: 0%">
+                </div>
+                <div class="buttons">
+                    <span style="cursor: pointer" onclick="javascript:banner_show_1(1)"><img src="image/arrow_right.png"></span>
+                    <span style="cursor: pointer" onclick="javascript:banner_show_1(0)"><img src="image/arrow_left.png"></span>
+                </div>
+            </div>
+        </div>
+        <div class="category">
+            <a class="category_title">Clothes</a>
+            <hr><br>
+            <div class="category_main">
+                <img class="image" src="image/img2.png">
+            </div>
+            <div class="category_banner">
+                <div class="image_banner">
+                    <img id="banner_image1_2" src="image/img1.png" style="width: 100%">
+                    <img id="banner_image2_2" src="image/img2.png" style="width: 0%">
+                    <img id="banner_image3_2" src="image/img3.png" style="width: 0%">
+                </div>
+                <div class="buttons">
+                    <span style="cursor: pointer" onclick="javascript:banner_show_2(1)"><img src="image/arrow_right.png"></span>
+                    <span style="cursor: pointer" onclick="javascript:banner_show_2(0)"><img src="image/arrow_left.png"></span>
+                </div>
+            </div>
+        </div>
+        <div class="category">
+            <a class="category_title">Sports</a>
+            <hr><br>
+            <div class="category_main">
+                <img class="image" src="image/img3.png">
+            </div>
+            <div class="category_banner">
+                <div class="image_banner">
+                    <img id="banner_image1_3" src="image/img1.png" style="width: 100%">
+                    <img id="banner_image2_3" src="image/img2.png" style="width: 0%">
+                    <img id="banner_image3_3" src="image/img3.png" style="width: 0%">
+                </div>
+                <div class="buttons">
+                    <span style="cursor: pointer" onclick="javascript:banner_show_3(1)"><img src="image/arrow_right.png"></span>
+                    <span style="cursor: pointer" onclick="javascript:banner_show_3(0)"><img src="image/arrow_left.png"></span>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
